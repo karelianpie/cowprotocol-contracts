@@ -27,7 +27,8 @@
     "bench:trace": "hardhat run bench/trace/index.ts",
     "bench:uniswap": "hardhat run bench/uniswap/index.ts",
     "fmt:sol": "prettier 'src/contracts/**/*.sol' -w",
-    "prepack": "yarn build"
+    "prepack": "yarn build",
+    "postinstall": "yarn build:ts"
   },
   "devDependencies": {
     "@0x/contract-artifacts-v2": "npm:@0x/contract-artifacts@^2.2.2",
